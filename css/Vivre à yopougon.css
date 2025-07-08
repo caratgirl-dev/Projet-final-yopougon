@@ -1,0 +1,625 @@
+/* SECTION VIVRE - Fond glossy avec image */
+#vivre.glossy-bg {
+  padding: 200px 30px;
+  position: relative;
+  backdrop-filter: blur(8px);
+  background: 
+    url("../img/Couché_de_soleil_sur_voiture.jpg") center/cover no-repeat;
+  background-blend-mode: overlay;
+}
+
+/* Titre principal */
+#vivre .glossy-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+   color: #49623d;
+ background: url("../img/backprincipal.png") no-repeat center center/cover;
+  padding: 15px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  transform: rotate(-1deg);
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur */
+#vivre .vivre-container {
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.560);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Paragraphe */
+#vivre .section-paragraphe {
+  font-size: 26px;
+  color: white;
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+/* SECTION TEMOIGNAGES - Fond glossy avec image */
+#temoignages.glossy-bg {
+  padding: 100px 30px;
+  position: relative;
+background-color: #a9d4f0;
+}
+
+/* Sous-titres */
+#temoignages .glossy-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+    color: #49623d;
+ background: url("../img/backprincipal.png") no-repeat center center/cover;
+  padding: 12px 25px;
+  border-radius: 10px;
+  display: inline-block;
+  transform: rotate(-1deg);
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur global */
+#temoignages .parole-habitants-container {
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+#temoignages .form-bloc {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraphe */
+#temoignages p {
+  font-size: 1.1em;
+  color: #1a1a1a;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Formulaire */
+#temoignages form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+#temoignages form input,
+#temoignages form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#temoignages form button {
+  margin-top: 20px;
+  background:#a9d4f0;
+  color: #2c6181;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#temoignages form button:hover {
+  background: #e3cc5c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #temoignages .parole-habitants-container {
+    flex-direction: column;
+  }
+
+  #temoignages .video-wrapper iframe {
+    height: 200px;
+  }
+}
+.yopougon-section {
+  background: url("../img/backprincipal.png") center/cover no-repeat;
+  background-blend-mode: overlay;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.yopougon-section .title {
+  font-size: 38px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.yopougon-section .section-desc {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+}
+
+.content-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.content-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+  font-size: 18px; ;
+}
+
+.text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1a4b3b;
+}
+
+.text p {
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+.image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* BOUTON GOOGLE MAPS */
+.btn-map {
+  display: inline-block;
+  padding: 12px 30px;
+  background : #a9d4f0;
+  color: #2c6181;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  transform: skewX(-20deg);
+  transition: left 0.5s;
+}
+
+.btn-map:hover::after {
+  left: 125%;
+}
+
+.btn-map:hover {
+  color: white;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+.quartiers-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.quartiers-list li {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.6);
+  border-left: 5px solid #b9d97d;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* ===== FORMULAIRE TEMOIGNAGES ===== */
+.parole-habitants-section {
+  background: linear-gradient(135deg, #a9d4f0cc 0%, #d9e48fcc 100%);
+  padding: 60px 20px;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.parole-habitants-section h3.sub-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2d7b2f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.parole-habitants-section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #1f3d27;
+}
+
+#avis-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.9);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#avis-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #4a4a4a;
+  font-size: 1rem;
+}
+
+#avis-form input,
+#avis-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1.8px solid #a9d4f0;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#avis-form input:focus,
+#avis-form textarea:focus {
+  outline: none;
+  border-color: #b9d97d;
+  box-shadow: 0 0 8px #b9d97dcc;
+}
+
+#avis-form button {
+  background: #a9d4f0;
+  border: none;
+  color: #2c6181;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 14px 0;
+  width: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+/* ===== SECTION INCONTOURNABLES ===== */
+.incontournables-section {
+  background-color: #2c6181;
+  padding: 80px 20px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.incontournables-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 44px;
+  font-weight: 900;
+   color: #49623d;
+ background: url("../img/backprincipal.png") no-repeat center center/cover;
+  padding: 14px 30px;
+  border-radius: 15px;
+  display: inline-block;
+  transform: rotate(-1deg);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.inco-row {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.inco-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.inco-image {
+  flex: 1 1 45%;
+  height: 280px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.inco-image:hover {
+  transform: scale(1.05);
+}
+
+.inco-text {
+  flex: 1 1 50%;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 25px 35px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.inco-text h3 {
+  font-size: 28px;
+  color: #2d7b2f;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.inco-text p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* ===== SECTION ECONOMIE ===== */
+.economie-section {
+  padding: 80px 20px;
+  background: url("../img/backprincipal.png") center/cover no-repeat fixed;
+  backdrop-filter: blur(10px);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.economie-card {
+  max-width: 1200px;
+  margin: auto;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 60px 40px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.economie-title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+   color: #49623d;
+ background: url("../img/backprincipal.png") no-repeat center center/cover;
+  padding: 20px 40px;
+  border-radius: 15px;
+  display: inline-block;
+  transform: rotate(-1deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-weight: 900;
+}
+
+.economie-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.eco-images {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.eco-image {
+  width: 100%;
+  height: 260px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.eco-image:hover {
+  transform: scale(1.03);
+}
+
+.eco-text {
+  flex: 1 1 50%;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: white;
+  padding-left: 15px;
+}
+
+.eco-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #f5d338;
+  font-weight: 700;
+}
+
+.eco-text p {
+  margin-bottom: 15px;
+}
+
+.eco-text ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.eco-text ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.eco-text ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #a9d4f0;
+  font-size: 20px;
+}
+
+/* ===== SECTION INSTALLATION ===== */
+.installation-section {
+  background: #fdfdf9;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.installation-text {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.installation-heading {
+  font-size: 48px;
+  margin-bottom: 20px;
+     color: #49623d;
+ background: url("../img/backprincipal.png") no-repeat center center/cover;
+  padding: 20px 40px;
+  border-radius: 15px;
+  display: inline-block;
+  transform: rotate(-1deg);
+  font-weight: 900;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.installation-description {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* FORMULAIRE */
+.installation-form {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.installation-form-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #5c7c1d;
+}
+
+.installation-form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #4a4a4a;
+  font-size: 1rem;
+}
+
+.installation-form input,
+.installation-form select,
+.installation-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 8px;
+  border-radius: 12px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  background: #fefefe;
+  transition: border-color 0.3s ease;
+}
+
+.installation-form input:focus,
+.installation-form select:focus,
+.installation-form textarea:focus {
+  outline: none;
+  border-color: #d9e48f;
+  box-shadow: 0 0 8px rgba(217, 228, 143, 0.5);
+}
+
+.installation-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.installation-form button {
+  margin-top: 30px;
+  padding: 14px 32px;
+  width: 100%;
+  background:  #a9d4f0;
+  color: #2c6181;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .inco-row, .eco-content {
+    flex-direction: column !important;
+  }
+
+  .inco-image, .eco-image {
+    width: 100% !important;
+    height: 220px !important;
+  }
+
+  .inco-text, .eco-text {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+
+  .eco-text {
+    padding-top: 20px;
+  }
+}

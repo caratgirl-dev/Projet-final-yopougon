@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+.contact-section {
+  background:url(../img/backprincipal.png) no-repeat center center fixed;
+  padding: 250px 10px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.contact-title {
+  font-size: 45px;
+  text-align: center;
+  color: #49623d;
+  background: url(../img/backprincipal.png) no-repeat center center;
+  padding: 15px 40px;
+  border-radius: 12px;
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 50px;
+  transform: rotate(-1deg);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  margin-left: 450px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+  font-size: 16px;
+  color: white;
+}
+.contact-form select{
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.contact-form button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: #a9d4f0;
+  color: #2c6181;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-title {
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-left: 0;
+    
+  }
+}
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+  }
+}

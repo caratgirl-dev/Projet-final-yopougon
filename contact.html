@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yopougon,L'avenir d'Abidjan</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/accueil.css" />
+    <link rel="stylesheet" href="css/historique.css" />
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<div data-aos="fade-up">
+    <header class="header">
+        <div class="header-logo">
+            <a href="#">
+                <img src="img/logo-removebg-preview.png" alt="Logo de Yopougon" />
+            </a>
+        </div>
+        <div class="header-menu" id="menu">
+            <nav class="navdeco">
+                <a href="http://127.0.0.1:5500/Accueil.html" class="soulignement-hover">Accueil</a>
+                <a href="http://127.0.0.1:5500/historique.html" class="soulignement-hover">Historique</a>
+                <a href="http://127.0.0.1:5500/nos%20cultures.html" class="soulignement-hover">Nos Cultures</a>
+                <a href="http://127.0.0.1:5500/Vivre%20%C3%A0%20Yopougon.html#" class="soulignement-hover">Vivre à
+                    Yopougon</a>
+                <a href="http://127.0.0.1:5500/contact.html" class="soulignement-hover">Contacts</a>
+            </nav>
+        </div>
+    </header>
+    <body>    
+<div data-aos="fade-up">
+  <section id="contact" class="contact-section">
+            <h2 class="contact-title">Entrer en contact avec nous</h2>
+            <div class="contact-container">
+                <form class="contact-form" id="formContact">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" placeholder="Votre nom" required>
+
+                    <label for="email">Adresse Email</label>
+                    <input type="email" id="email" placeholder="exemple@email.com" required>
+                    <label for="telephone">Numéro de téléphone</label>
+                    <input type="tel" id="telephone" placeholder="(+225) XX XX XX XX" required>
+                       <label for="sujet">Sujet</label>
+                    <select id="sujet" required>
+                        <option value="" disabled selected>Choisissez un sujet</option>
+                        <option value="demande">Demande d'information</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="plainte">Plainte</option>
+                        <option value="autre">Autre</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Votre message ici..." required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+</div>
+    </body>
+    <footer class="footer-yopcity">
+        <div class="footer-bars-top">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>CONTACT</h3>
+                <p><strong>Commune de Yopougon</strong></p>
+                <p>Abidjan, Côte d'Ivoire</p>
+                <p><strong>Tél :</strong> +225 XX XX XX XX</p>
+                <p><strong>Email :</strong> contact@yopcity.ci</p>
+                <p><strong>Horaires :</strong> Lun - Ven, 8h30 - 17h</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>LIENS UTILES</h3>
+                <ul>
+                    <li><a href="#">La Mairie</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Démarches</a></li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Actualités</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>PLAN DU SITE</h3>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Accessibilité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-logo-socials">
+                <img src="img/logo-removebg-preview.png" alt="Logo Yop-City" class="footer-logo">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copy">© 2025 | Yop-City. Tous droits réservés.</p>
+</div>
+</footer>
+
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+
+    const events = {
+      meetings: [
+        { title: "Conseil municipal", date: "2025-06-30", time: "17:00" },
+        { title: "Commission Habitat", date: "2025-07-01", time: "17:30" }
+      ],
+      events: [
+        { title: "Festival des Arts", date: "2025-07-03", time: "15:00" },
+        { title: "Marché local", date: "2025-07-05", time: "10:00" }
+      ]
+    };
+
+    let currentTab = 'meetings';
+    let today = new Date();
+    let currentMonth = today.getMonth();
+    let currentYear = today.getFullYear();
+
+    const monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+      "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+
+    function generateCalendar(month, year) {
+      const monthLabel = document.getElementById('calendar-month');
+      monthLabel.textContent = `${monthNames[month]} ${year}`;
+
+      const dateContainer = document.getElementById('calendar-dates');
+      dateContainer.innerHTML = "";
+
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      for (let i = 0; i < firstDay; i++) {
+        dateContainer.innerHTML += `<div></div>`;
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        const hasEvent = events[currentTab].some(ev => ev.date === dateStr);
+        const thisDate = new Date(year, month, day);
+        const isToday = thisDate.toDateString() === new Date().toDateString();
+
+        const dayBox = document.createElement('div');
+        dayBox.className = isToday ? 'today' : '';
+        dayBox.style.position = 'relative';
+        dayBox.style.cursor = 'pointer';
+        dayBox.innerHTML = `${day}${hasEvent ? ' <span>●</span>' : ''}`;
+        dayBox.onclick = () => showEventsForDate(dateStr);
+
+        dateContainer.appendChild(dayBox);
+      }
+    }
+
+    function showEventsForDate(dateStr) {
+      const panel = document.getElementById('event-panel');
+      panel.innerHTML = `<h3>Événements du ${dateStr}</h3>`;
+
+      const dayEvents = events[currentTab].filter(ev => ev.date === dateStr);
+      if (dayEvents.length === 0) {
+        panel.innerHTML += "<p>Aucun événement ce jour-là.</p>";
+      } else {
+        dayEvents.forEach(e => {
+          panel.innerHTML += `
+            <div class="event-card">
+              <h4>${e.title}</h4>
+              <p>${e.date}, ${e.time}</p>
+            </div>
+          `;
+        });
+      }
+    }
+
+    function switchTab(tab) {
+      currentTab = tab;
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(t => {
+        if (t.textContent.toLowerCase().includes(tab)) t.classList.add('active');
+      });
+      generateCalendar(currentMonth, currentYear);
+      showEvents();
+    }
+
+    function showEvents() {
+      const panel = document.getElementById('event-panel');
+      panel.innerHTML = "";
+      events[currentTab].forEach(e => {
+        panel.innerHTML += `
+          <div class="event-card">
+            <h4>${e.title}</h4>
+            <p>${e.date}, ${e.time}</p>
+          </div>
+        `;
+      });
+    }
+
+    function changeMonth(offset) {
+      currentMonth += offset;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      } else if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+      }
+      generateCalendar(currentMonth, currentYear);
+    }
+
+    document.getElementById('event-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const title = document.getElementById('event-title').value;
+      const date = document.getElementById('event-date').value;
+      const time = document.getElementById('event-time').value;
+      events[currentTab].push({ title, date, time });
+      e.target.reset();
+      generateCalendar(currentMonth, currentYear);
+      showEventsForDate(date);
+    });
+
+    generateCalendar(currentMonth, currentYear);
+    showEvents();
+  </script>

@@ -1,0 +1,253 @@
+.culture-intro {
+  position: relative;
+  background: url("../img/ebrie.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.culture-intro-overlay {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Titre stylisé */
+.section-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+  background: url("../img/backprincipal.png") no-repeat center;
+  padding: 15px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  transform: rotate(-1deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Texte intro */
+.culture-intro-text {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+    padding: 12px 24px;
+  }
+
+  .culture-intro-text {
+    font-size: 1em;
+  }
+
+  .culture-intro-overlay {
+    padding: 30px 20px;
+  }
+}
+
+.section-villages-culture {
+  padding: 100px 30px;
+  background: url("../img/backprincipal.png") center/cover no-repeat;
+  color: white;
+}
+
+.villages-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.village-texte {
+  flex: 1 1 500px;
+  background: rgba(27, 26, 26, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.village-texte p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: white;
+}
+
+.village-images {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.village-img-main img,
+.village-img-double img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  height: 260px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.village-img-main img:hover,
+.village-img-double img:hover {
+  transform: scale(1.02);
+}
+
+.village-img-double {
+  display: flex;
+  gap: 20px;
+}
+
+.village-img-double img {
+  flex: 1;
+  height: 200px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .villages-container {
+    flex-direction: column;
+  }
+
+  .village-img-double {
+    flex-direction: column;
+  }
+
+  .village-img-double img {
+    height: 220px;
+  }
+}
+
+.section-gastronomie {
+  position: relative;
+  background: url("../img/nourritureback.jpg") center/cover no-repeat;
+  padding: 100px 30px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 40px;
+  background: url("../img/backprincipal.png") no-repeat center;
+  color: #49623d;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 12px;
+  transform: rotate(-1deg);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.gastronomie-overlay {
+  background: rgba(209, 204, 204, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+
+.section-intro {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+.plats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.plat-card {
+  background: rgba(110, 108, 108, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.plat-img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.plat-card h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #b9d97d;
+}
+
+.plat-card p {
+  padding: 0 15px 20px;
+  color: white;
+  font-size: 1em;
+}
+
+/* Animation douce à l’entrée */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-zouglou {
+  position: relative;
+  padding: 120px 30px;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/Internat-temple-du-Zouglou-BAAB-5.jpeg") center/cover no-repeat;
+}
+
+.zouglou-overlay {
+  background: rgba(71, 70, 70, 0.5);
+  backdrop-filter: blur(15px);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 900px;
+  color: white;
+  text-align: center;
+}
+
+.zouglou-text {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin: 30px 0;
+}
+
+.zouglou-quote {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #f5d338;
+  margin-top: 20px;
+}
